@@ -39,7 +39,7 @@ class Song
     artist_name = data[0]
     song_name = data[1]
     song = self.new
-    song.name = song_name.replace(".mp3")
+    song.name = song_name.gsub(".mp3", "")
     song.artist_name = artist_name
     song
   end
