@@ -43,7 +43,7 @@ class Song
     song.artist_name = artist_name
     song
   end
-  def self.create_from_filename(file)
+  def self.create_from_filename(file) #didn't understand the lab req. Found solution online
     song = self.new_from_filename(file)
     song.save
     song
