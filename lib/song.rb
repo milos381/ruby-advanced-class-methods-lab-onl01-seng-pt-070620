@@ -5,7 +5,7 @@ class Song
   @@all = []
 
   def self.create
-    binding.pry
+  #  binding.pry
     song = self.new
     @@all << song
   end
