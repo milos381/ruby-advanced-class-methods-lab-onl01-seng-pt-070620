@@ -5,9 +5,9 @@ class Song
   @@all = []
 
   def self.create
-  #  binding.pry
+    #binding.pry
     song = self.new
-    @@all << song
+    self.all << song
   end
 
   def self.all
