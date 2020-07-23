@@ -8,6 +8,7 @@ class Song
     #binding.pry
     song = self.new
     song.save
+    song
   end
 
   def self.all
