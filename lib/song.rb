@@ -34,8 +34,17 @@ class Song
     self.all.sort_by{|song| song.name} #pitaj sto ne radi sort
   end
 
-  def self.new_from_filename
-
+  def self.new_from_filename(song)
+    partial = song.collect do |line|
+      data = line.split(" - ")
+      artist = data[0]
+      name = data[1]
+      song = self.new
+      song.name = name(/.mp3/)
+      artist.name = artist
+    end
+    artist
+    song
   end
   def self.create_from_filename
 
