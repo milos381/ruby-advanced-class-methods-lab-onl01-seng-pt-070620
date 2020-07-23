@@ -33,6 +33,13 @@ class Song
   def self.alphabetical
     self.all.sort_by{|song| song.name} #pitaj sto ne radi sort
   end
+
+  def self.new_from_filename
+
+  end
+  def self.destroy_all
+    self.all.clear
+  end
   def self.all
     @@all
   end
