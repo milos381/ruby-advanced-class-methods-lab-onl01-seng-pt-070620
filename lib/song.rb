@@ -40,7 +40,7 @@ class Song
       name = data[1]
       song = self.new
       song.name = name.gsub(".mp3", "")
-      artist.name = artist
+      song.artist = artist
       song
   end
   def self.create_from_filename
