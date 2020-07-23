@@ -10,7 +10,7 @@ class Song
     song.save
     song
   end
-  def self.new_by_name(name)
+  def self.new_by_name(song)
     #
 
   end
