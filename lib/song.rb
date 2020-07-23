@@ -35,16 +35,12 @@ class Song
   end
 
   def self.new_from_filename(song)
-    partial = song.collect do |line|
       data = line.split(" - ")
       artist = data[0]
       name = data[1]
       song = self.new
       song.name = name.gsub(".mp3", "")
       artist.name = artist
-    end
-    artist
-    song
   end
   def self.create_from_filename
 
